@@ -1,0 +1,520 @@
+<html>
+<head>
+
+<div w3-include-html='default.html'></div>
+<script src='default.js'> </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Catamaran|Montserrat|Raleway|Open+Sans:700|Roboto" rel="stylesheet">
+</head>
+<style>
+body
+{
+	background-color: black;
+	color: white;
+	z-index: 10;
+	background-image: url('media/other.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+hr
+{
+	border: 1px solid;
+	text-align: center;
+	width: 75%;
+	border-color: #fff;
+	padding: none;
+}
+
+.heading
+{
+	font-size: 45px;
+	padding-top: 100px;
+	margin-left: 12%;
+`	overflow: auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.som_txt
+{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 12%;
+	margin-right: 12%;
+	color:  #FFF;
+	font-size: 28px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.flex-events
+{
+	width: 80%;
+	padding-top: 20px;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: transparent;
+	position: absolute;
+}
+
+.bod
+{
+	width: 200px;
+	margin: 20px;
+	height: 300px;
+	border-radius: 35px;
+	background-repeat: none;
+	background-size: 200px  150px;
+	background-position: left top;
+}
+
+
+	
+.content
+{
+	margin-top: 150px;
+	background-size: cover;
+	height: 150px;
+	text-align: center;
+	border-radius: 0px 0px 35px 35px;
+	background-color: #121518;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 26px;
+	transition-property: margin-top, height, border-radius;
+	transition-duration: 0.7s;
+	
+}
+
+.pad
+{
+	padding-top: 15%;
+}
+
+.content a
+{
+	font-size: 20px;
+	padding-top: 50px;
+	text-align: left;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 0.4s;
+	transition-duration: 0.3s;
+}
+
+.content:hover
+{
+	margin-top: 0px;
+	height: 300px;
+	border-radius: 35px;
+	cursor: pointer;
+}
+
+.content:hover a
+{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.description
+{
+	width: 90%;
+	margin-top: 70px;
+	margin-left: 5%;
+	color: white;
+	z-index: 100;
+	position: absolute;
+	display: none;
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+	border-radius: 15px;
+}
+
+.cross
+{
+	border: none;
+	background-color: transparent;
+	position: fixed;
+	font-size: 30px;
+	padding: 30px;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.cross:hover
+{
+	cursor: pointer;
+	
+}
+.description>h1
+{
+	margin-left: 10%;
+	color: white;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 42px;
+	padding-top: none;
+	padding-left: 30px;
+	padding-bottom: 35px;
+}
+
+.description>h2
+{
+	margin-left: 10%;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	padding-top: 75px;
+	padding: 20px;
+}
+.description>p
+{
+	margin-left: 10%;
+	margin-right: 5%;
+	text-align: left;
+	color: white;
+	font-size: 24px;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.description>ul
+{
+	list-style-position: outside;
+	margin-left: 10%;
+	margin-right: 5%;
+	font-family: 'Roboto', sans-serif;
+	list-style: url('<i class="fas fa-certificate"></i>');
+	font-size: 24px;
+	padding: 20px;
+}
+
+.description>flexdet
+{
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-right: 10%;
+	padding-bottom: 10%;
+	background-color: transparent;
+}
+
+.description>flexdet>div
+{
+	
+	padding: 20px;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+
+}
+.check
+{
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	border: none;
+	padding: none;
+}
+.check:hover
+{
+	cursor: pointer;
+}
+.rest
+{
+	opacity: 1;
+}	
+@media only screen and (max-width: 720px)
+{
+	.headings{font-size: 25px;}
+	.som_txt{font-size: 6vw;}
+	.bod{width:175px; height: 250px; border-radius: 30px; background-size: 175px 125px;}
+	.content{margin-top: 125px; height: 125px; border-radius: 0px 0px 30px 30px; font-size: 8vw;}
+	.content a{padding-top: 0px; font-size: 7vw;}
+	.content:hover{height: 250px;}
+	.description{padding-top: 50px; margin-left: none; margin-right: none;}
+	.description>h1{font-size: 8vw;}
+	.description>h2{font-size: 7vw;}
+	.description>p{font-size: 6vw;}
+	.description>ul{font-size: 6vw;}
+	.description>flexdet>div{font-size: 6vw;}
+}	
+#SH, #id1{background-image: url('media/litq.jpg');}
+#SOTS, #id2{background-image: url('media/spb.jpg');}
+#PP, #id3{background-image: url('media/ad.jpg');}
+#YY, #id4{background-image: url('media/btl.jpg');}
+#FF, #id5{background-image: url('media/bamboozled.jpg');}
+#TE, #id6{background-image: url('media/ling.jpg');}
+#BE, #id7{background-image: url('media/ym.jpg');}
+
+</style>
+
+<script>
+function dis1()
+{
+	desc= document.getElementById('id1');
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c1").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});
+}
+function dis2()
+{
+	desc = document.getElementById('id2')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c2").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis3()
+{
+	desc=document.getElementById('id3')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c3").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis4()
+{
+	desc = document.getElementById('id4')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c4").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis5()
+{
+	desc = document.getElementById('id5')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c5").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis6()
+{
+	desc = document.getElementById('id6')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c6").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis7()
+{
+	desc = document.getElementById('id7')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c7").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+
+</script>
+
+</head>
+
+<body>
+<div class='description' id='id1'  >
+	<div class='cross' id='c1'><i class="fas fa-times"></i></div>
+	<h1>LIT QUIZ</h1>
+	<h2>Event Overview</h2>
+	<p>Do you love the enchanting world of literature? Do you feel the dusty old volumes calling out to you? Think you are the ultimate literature lover? Then we have just the event for you. This February, gear up as Verba Maximus brings to you, the Literature Quiz.</p>
+	<p>Participate in teams of 3 or less and score as much as you can in the prelims to be in the top 8 and qualify for the finals. Test your mettle in the finals and compete to win against the very best teams. So, take out those dusty volumes, revise your Shakespeare, Dickens and Tolkien and come participate in the Literature Quiz during Verba Maximus, 2019.</p>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 2 Hours </div>
+		<div> Organiser <br> Prakhar Sinha </div>
+		<div> Contact <br> +919099002830</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id2'>
+	<div class='cross' id='c2'><i class="fas fa-times"></i></div>
+	<h1>SPELL BEE</h1>
+	<h2>Evnet Overview</h2>
+	<p>Did something in the previous sentence annoy you? If yes, then here's chance to make the most of your obsession with spelling. Come and participate in Spell Bee and prove that auto correct in your phone is hardly used! If nothing else, an extension to your vocabulary is guaranteed!</p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>The event consists of two rounds. </li>
+		<li>In the first round, participants will have to write down the spellings of the words being called out.</li>
+		<li>Those selected in the first round will proceed to round 2, where they will have to spell the given word. This will be an oral and time bound round.</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Sandeep Jimmy </div>
+		<div> Contact <br> +919497746454</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id3'>
+	<div class='cross' id='c3'><i class="fas fa-times"></i></div>
+	<h1>WHOSE AD IS IT ANYWAY?</h1>
+	<h2>Event Overview</h2>
+	<p>Ads are everywhere. More often than not, they define a brand. 
+In this event, participants will be asked to identify brands from their minimalist ad campaigns, in under one minute.  </p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>Each participant gets one minute to identify as many brands as they can, consecutively.  </li>
+		<li>The questions are divided into sets of easy, medium and difficult with +1, +2 and +3 points respectively.</li>
+		<li>The participant can choose the difficulty of each question that they wish to attempt. </li>
+		<li>However, if the participant is unable to answer correctly, they are instantly eliminated. (sudden death)</li>
+		<li>A turn ends either when the participant answers incorrectly or when one minute is over, whichever happens first.</li>
+		<li>The partcipant(s) with the maximum points win(s). 
+</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Vedika Kulkarni </div>
+		<div> Contact <br> +919820218831</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id4'>
+	<div class='cross' id='c4'><i class="fas fa-times"></i></div>
+	<h1>BY THE LAW</h1>
+	<h2>Event Overview</h2>
+	<p>Laws are important because they act as a guideline as to what is acceptable in a society. Their absence would create conflicts and chaos. Once in a while certain laws are passed that entirely change the perception of the world. These can be called revolutionary laws.
+Some noteworthy example include Section 377, Gun control etc.</p>
+	<p>n this event participants would be given a set of prompts based on these laws. The participants are required to select one of them and write an article on that particular law.
+The participants will be judged on the basis of their writing skills, grammar and their overall assessment of the law.</p>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Vedika Kulkarni </div>
+		<div> Contact <br> +919820218831</div>
+	</flexdet>
+</div>
+
+<div class='description' id='id5'>
+	<div class='cross' id='c5'><i class="fas fa-times"></i></div>
+	<h1>BAMBOOZLED</h1>
+	<h2>Event Overview</h2>
+	<p>"You spin the Wheel of Mayhem to go up the Ladder of Chance. You go past the Mud Hut, through the Rainbow Ring to get to the Golden Monkey, you yank his tail and boom - you're in Paradise Pond!"</p>
+	<p>This VM, come and prove that you've got the sharpest wits in the house during "Bamboozled!" It is a gameshow-like event where you'll have to put your  general knowledge and quick thinking skills to the test as you compete against others in a variety of weird, wacky and hilarious games/challenges. These games will span a multitude of topics, from current news, to ancient history or famous personalities, anything goes!  But do take heed, since only team will walk away the champions, and as for the rest, they'll end up.....BAMBOOZLED!</p>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Ritika Sridharan </div>
+		<div> Contact <br> +919542587755</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id6'>
+	<div class='cross' id='c6'><i class="fas fa-times"></i></div>
+	<h1>LINGUATHON</h1>
+	<h2>Event Overview</h2>
+	<p>What more does a literary fest require except a battle of the tongues? </p>
+	<p>An event that vigorously tests Gespür in speaking, la Beauté in writing,  la alegría of listening, the 強い集中 for reading. Watch, or better yet participate, as the participants dole it out in a battle royale to test out who will be the master of their favourite language (cough, NOT ENGLISH) in... The Linguathon,  The Language Marathon!! </p>
+	<h2>Languages Accepted:</h2>
+	<ul>
+		<li>संस्कृत (Sanskrit)  </li>
+		<li>Deutsche (German) </li>
+		<li>日本人 (Japanese) </li>
+		<li>Français (French) </li>
+		<li>Español (Spanish) </li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Ritika Sridharan </div>
+		<div> Contact <br> +919542587755</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id7'>
+	<div class='cross' id='c7'><i class="fas fa-times"></i></div>
+	<h1>YOUTH MAHASABHA</h1>
+	<h2>Event Overview</h2>
+	<p>For good ideas and true innovation, you need human interaction, conflict, argument and debate.</p>
+	<p>Youth Mahasabha is a platform for young minds from colleges all over India to find a way to celebrate diversity of thoughts and debate our differences. Come fuel your desire to debate and to stand for yourself when the stakes are high.</p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>The language to be used is Hindi. </li>
+		<li>Participants are made to discuss on a topic or subject for a limited time. The moderator keeps the discussion on track and ensures no deviation from the topic.</li>
+		<li>3 minutes for a speech in favour or against</li>
+		<li>2 minutes will be given to each contestant to question opponent.</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Saksham Sharma </div>
+		<div> Contact <br> +917997083793</div>
+	</flexdet>
+</div>
+
+<div class='rest'>
+
+<div class='heading'>OTHER EVENTS</div>
+<div class='som_txt'>Bored of the regular drill? We also offer a barrage of other interesting events waiting to be tried out!</div>
+
+<hr>
+
+<div class='flex-events'>
+	<div class='bod' id='SH'>
+		<div class='content' ><div class='pad'>Lit Quiz</div><br><br>
+		<a> From Shakespearian plays to dystopian societies, put your literary trivia to test. <br> <button class='check' onclick='dis1()'>Learn More</button> </a> </div>
+	</div>
+	
+	<div class='bod' id='SOTS'>
+		<div class='content' ><div class='pad'>Spell Bee</div><br><br>
+		<a> This time, you can't blame autocorrect.<br> <button class='check' onclick='dis2()'>Learn More</button>  </a> </div>
+	</div>
+	<div class='bod' id='PP'>
+		<div class='content' ><div class='pad'>Whose Ad is it Anyway?</div><br><br>
+		<a> Those unskippable youtube ads will prove useful after all.<br> <button class='check' onclick='dis3()'>Learn More</button>  </a> </div>
+	</div>
+	<div class='bod' id='YY'>
+		<div class='content' ><div class='pad'>By the Law</div><br><br>
+		<a> Unleash the lawyer in you. <br> <button class='check' onclick='dis4()'>Learn More</button>  </a> </div>
+	</div>
+			
+	<div class='bod' id='FF'>
+		<div class='content' ><div class='pad'>Bamboozled</div><br><br>
+		<a> Ever wanted to be a part of a game show? This is your chance. <br> <button class='check' onclick='dis5()'>Learn More</button>  </a> </div>
+	</div>
+	
+	<div class='bod' id='TE'>
+		<div class='content' ><div class='pad'>Linguathon</div><br><br>
+		<a> Put your foreign tongue to the test.<br> <button class='check' onclick='dis6()'>Learn More</button>  </a> </div>
+	</div>
+	
+	<div class='bod' id='BE'>
+		<div class='content' ><div class='pad'>Youth Mahasabha</div><br><br>
+		<a> <br> <button class='check' onclick='dis7()'>Learn More</button>  </a> </div>
+	</div>
+	
+</div>
+
+</div>
+</body>
+
+</html>
+

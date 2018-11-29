@@ -1,0 +1,46 @@
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+
+<style>
+body
+{
+	background-color: #000;
+	background-image: url('media/background.png');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	margin: none;
+}
+
+body:hover
+{
+	cursor: pointer;
+}
+
+.log
+{
+	margin-top: 5%;
+	margin-left: 30%;
+	width: 40%;
+
+
+}
+.dates
+{
+	color: #c8c8c8;
+	font-family: 'Vollkorn', serif;
+	font-size: 25px;
+	margin-left: calc(50% - 50px);
+}
+@media only screen and (max-width: 720px){.log{margin-top: 10%;}}
+@media only screen and (max-width: 520px){.log{margin-left: 22.5%; margin-top: 25%; width: 50%;}}
+@media only screen and (max-width: 340px){.log{margin-left: 20%; margin-top: 50%; width: 60%;}}
+@media only screen and (max-width: 300px){.log{margin-top: 50%; margin-left: 17.5%; width: 65%;}}
+</style>
+<body>
+<img class='log' src='media/logo.png' onclick="location.href='home.html';"></img>
+<div class='dates'>Jan 19 & 20</div>
+</body>
+</html>

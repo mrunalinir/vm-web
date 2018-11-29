@@ -1,0 +1,503 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Catamaran|Montserrat|Raleway|Open+Sans:700|Roboto" rel="stylesheet">
+<div w3-include-html='default.html'></div>
+<script src='default.js'> </script>
+<style>
+body
+{
+	background-color: black;
+	color: white;
+	z-index: 10;
+	background-image: url('media/writing.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+hr
+{
+	border: 1px solid;
+	text-align: center;
+	width: 75%;
+	border-color: #fff;
+	padding: none;
+}
+
+.heading
+{
+	font-size: 45px;
+	padding-top: 100px;
+	margin-left: 12%;
+`	overflow: auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.som_txt
+{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 12%;
+	margin-right: 12%;
+	color:  #FFF;
+	font-size: 28px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.flex-events
+{
+	width: 80%;
+	padding-top: 20px;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: transparent;
+	position: absolute;
+}
+
+.bod
+{
+	width: 200px;
+	margin: 20px;
+	height: 300px;
+	border-radius: 35px;
+	background-repeat: none;
+	background-size: 200px  150px;
+	background-position: left top;
+}
+
+
+	
+.content
+{
+	margin-top: 150px;
+	background-size: cover;
+	height: 150px;
+	text-align: center;
+	border-radius: 0px 0px 35px 35px;
+	background-color: #121518;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 26px;
+	transition-property: margin-top, height, border-radius;
+	transition-duration: 0.7s;
+	
+}
+
+.pad
+{
+	padding-top: 15%;
+}
+
+.content a
+{
+	font-size: 20px;
+	padding-top: 50px;
+	text-align: left;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 0.4s;
+	transition-duration: 0.3s;
+}
+
+.content:hover
+{
+	margin-top: 0px;
+	height: 300px;
+	border-radius: 35px;
+	cursor: pointer;
+}
+
+.content:hover a
+{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.description
+{
+	width: 90%;
+	margin-top: 70px;
+	margin-left: 5%;
+	color: white;
+	z-index: 100;
+	position: absolute;
+	display: none;
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+	border-radius: 15px;
+}
+
+.cross
+{
+	border: none;
+	background-color: transparent;
+	position: fixed;
+	font-size: 30px;
+	padding: 30px;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.cross:hover
+{
+	cursor: pointer;
+	
+}
+.description>h1
+{
+	margin-left: 10%;
+	color: white;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 42px;
+	padding-top: none;
+	padding-left: 30px;
+	padding-bottom: 35px;
+}
+
+.description>h2
+{
+	margin-left: 10%;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	padding-top: 75px;
+	padding: 20px;
+}
+.description>p
+{
+	margin-left: 10%;
+	margin-right: 5%;
+	text-align: left;
+	color: white;
+	font-size: 24px;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.description>ul
+{
+	list-style-position: outside;
+	margin-left: 10%;
+	margin-right: 5%;
+	font-family: 'Roboto', sans-serif;
+	list-style: url('<i class="fas fa-certificate"></i>');
+	font-size: 24px;
+	padding: 20px;
+}
+
+.description>flexdet
+{
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-right: 10%;
+	padding-bottom: 10%;
+	background-color: transparent;
+}
+
+.description>flexdet>div
+{
+	
+	padding: 20px;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+
+}
+.check
+{
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	border: none;
+	padding: none;
+}
+.check:hover
+{
+	cursor: pointer;
+}
+.rest
+{
+	opacity: 1;
+}	
+@media only screen and (max-width: 720px)
+{
+	.headings{font-size: 25px;}
+	.som_txt{font-size: 6vw;}
+	.bod{width:175px; height: 250px; border-radius: 30px; background-size: 175px 125px;}
+	.content{margin-top: 125px; height: 125px; border-radius: 0px 0px 30px 30px; font-size: 8vw;}
+	.content a{padding-top: 0px; font-size: 7vw;}
+	.content:hover{height: 250px;}
+	.description{padding-top: 50px; margin-left: none; margin-right: none;}
+	.description>h1{font-size: 8vw;}
+	.description>h2{font-size: 7vw;}
+	.description>p{font-size: 6vw;}
+	.description>ul{font-size: 6vw;}
+	.description>flexdet>div{font-size: 6vw;}
+}	
+#SH, #id1{background-image: url('media/sherlocked.jpeg');}
+#SOTS, #id2{background-image: url('media/sots.jpeg');}
+#PP, #id3{background-image: url('media/picpers.jpg');}
+#YY, #id4{background-image: url('media/yinyang.jpg');}
+#TE, #id6{background-image: url('media/te.jpg');}
+#BE, #id7{background-image: url('media/be.jpg');}
+
+</style>
+
+<script>
+function dis1()
+{
+	desc= document.getElementById('id1');
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c1").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});
+}
+function dis2()
+{
+	desc = document.getElementById('id2')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c2").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis3()
+{
+	desc=document.getElementById('id3')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c3").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis4()
+{
+	desc = document.getElementById('id4')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c4").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis5()
+{
+	desc = document.getElementById('id5')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c5").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis6()
+{
+	desc = document.getElementById('id6')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c6").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis7()
+{
+	desc = document.getElementById('id7')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c7").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+
+</script>
+
+</head>
+
+<body>
+<div class='description' id='id1'  >
+	<div class='cross' id='c1'><i class="fas fa-times"></i></div>
+	<h1>SHERLOCKED</h1>
+	<h2>Event Overview</h2>
+	<p>A gruesome murder has occurred on the campus of BITS Pilani, Hyderabad Campus and this is a shoutout to all investigators to help find the perpetrator. You will be provided with a detailed report by the local police and a CBI report of the suspects with their respective character sketches and relation to the deceased. You will also have the liberty to interview suspects and, if needed, to bend them till they break.
+</p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>Use your deductive skills to find out who the murderer is. </li>
+		<li>Provide a detailed report mentioning the motive behind the crime, and the means and opportunity the killer took advantage of.</li>
+		<li>Give a coherent final conclusion.</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Shashank Sistla </div>
+		<div> Contact <br> +917397031579</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id2'>
+	<div class='cross' id='c2'><i class="fas fa-times"></i></div>
+	<h1>Symphonies of The Soul</h1>
+	<h2>Event Overview</h2>
+	<p>It is often said that music is the language of the soul. Let your creativity tune itself with the music, and create story, poem, or an essay; anything that is inspired by the melodies around you.</h2>
+	<ul>
+		<li>There is no word limit.   </li>
+		<li>The content of the write-up must be inspired by the music played. </li>
+		<li>Contestants can choose a minimum of one musical piece to act as an inspiration for what they write. </li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 1.5 Hours </div>
+		<div> Organiser <br> Sriya Suri </div>
+		<div> Contact <br> +919000876982</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id3'>
+	<div class='cross' id='c3'><i class="fas fa-times"></i></div>
+	<h1>Picture Perspective</h1>
+	<h2>Event Overview</h2>
+	<p>It is well known that everyone is an artist. All we need is a trigger to spark the artist hidden inside every one of us to blaze into existence. Let a picture be your trigger. Shown a picture, weave the words the way the imagery inspires you to. </p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>Any kind of write-up, be it a story, an essay, a poem, or any other, may be written in English within in the time constraints of the event.</li>
+		<li>There is no word limit.</li>
+		<li>The content of the write-up must either be related to or directly inspired from the picture.</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 2 Hours </div>
+		<div> Organiser <br> Siddhant Biswas </div>
+		<div> Contact <br> +919106040990</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id4'>
+	<div class='cross' id='c4'><i class="fas fa-times"></i></div>
+	<h1>Yin Yang</h1>
+	<h2>Event Overview</h2>
+	<p>There could be multiple sides to a story depending on whose shoe you are in. What this event asks for, however, is just one complementary pair. Yin Yang, like the Chinese concept itself, requires you to view a situation in contrasting, yet complementary, perspectives, and weave a plot worth the prize.</p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>Participate in teams of two . </li>
+		<li>Write the yin or yang version of a prompt that suits your liking and swap with your partner.</li>
+		<li>Write a complementary(not necessarily opposite)version for whatever your partner has written</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 2 Hours </div>
+		<div> Organiser <br> Abhimanyu Dasgupta </div>
+		<div> Contact <br> +919121760677</div>
+	</flexdet>
+</div>
+
+
+
+<div class='description' id='id6'>
+	<div class='cross' id='c6'><i class="fas fa-times"></i></div>
+	<h1>Rise Through The Ages</h1>
+	<h2>Event Overview</h2>
+	<p>The idea of what a revolution constitutes has changed and will continue to change over the years. After all, the canvas upon which revolutionary ideas, wars and people are painted changes with society. There are always new problems or old traditions, decisions that should be remade, people rediscovering the meaning of being human.
+</p>
+	<p>And in that spirit, this Verba Maximus presents its first theme event wherein the writer must choose an age and reconstruct the world during particular revolution in a short story, poem or any other literary means, from the eyes of those involved. The writer must bring out the all various aspects of how revolutions change people, society, commerce etc - small or big. </p>
+
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>Entries are allowed only in the English language.
+ </li>
+		<li>There is no word limit.</li>
+		<li>Entries will be judged on the basis of creativity, relevance to the prompt, style and overall coherence.
+</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3 Hours </div>
+		<div> Organiser <br> Siddhant Biswas </div>
+		<div> Contact <br> +919106040990</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id7'>
+	<div class='cross' id='c7'><i class="fas fa-times"></i></div>
+	<h1>Quill the Revolution</h1>
+	<h2>Event Overview</h2>
+	<p>Draw inspiration from your favourite fictional universes and write a fan-fic or a what if story which follows a revolutionary character, idea or pov. 
+Describe the world after the Thanos snap, or under the rule of Lord Voldemort, or just rewrite your favourite song from les miserables! The possibilities are endless, so put your world building caps on and re-imagine your favourite book, movie or game from ashes to glory. 
+</p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>Submit your short story, prose or poem (in english only) to elas@hyderabad.bits-pilani.ac.in </li>
+		<li>Word limit is up to 5000 words.</li>
+		<li>Submit your entries by the 18th of January.</li>
+		<li>Plagiarism of any form will not be accepted.</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Type <br> Online </div>
+		<div> Organiser <br> Mrunalini Ramnath </div>
+		<div> Contact <br> +919000522944</div>
+	</flexdet>
+</div>
+
+<div class='rest'>
+
+<div class='heading'>WRITING EVENTS</div>
+<div class='som_txt'>Check out all the writing events we have lined up for you!</div>
+
+<hr>
+
+<div class='flex-events'>
+	<div class='bod' id='SH'>
+		<div class='content' ><div class='pad'>Sherlocked</div><br><br>
+		<a> Play the detective and unmask the twisted lies. <br> <button class='check' onclick='dis1()'>Learn More</button> </a> </div>
+	</div>
+	
+	<div class='bod' id='SOTS'>
+		<div class='content' ><div class='pad'>Symphonies <br>of the Soul</div><br><br>
+		<a> Let the music guide you.<br> <button class='check' onclick='dis2()'>Learn More</button>  </a> </div>
+	</div>
+	<div class='bod' id='PP'>
+		<div class='content' ><div class='pad'>Picture Perspective</div><br><br>
+		<a> Is a picture really worth a thousand words?<br> <button class='check' onclick='dis3()'>Learn More</button>  </a> </div>
+	</div>
+	<div class='bod' id='YY'>
+		<div class='content' ><div class='pad'>Yin Yang</div><br><br>
+		<a> Two voices, one piece.<br> <button class='check' onclick='dis4()'>Learn More</button>  </a> </div>
+	</div>
+			
+	<div class='bod' id='TE'>
+		<div class='content' ><div class='pad'>Rise Through the Ages</div><br><br>
+		<a> Create a revolution stronger than time itself.<br> <button class='check' onclick='dis6()'>Learn More</button>  </a> </div>
+	</div>
+	
+	<div class='bod' id='BE'>
+		<div class='content' ><div class='pad'>Quill the Revolution</div><br><br>
+		<a> Online event.<br> <button class='check' onclick='dis7()'>Learn More</button>  </a> </div>
+	</div>
+	
+</div>
+
+</div>
+</body>
+
+</html>

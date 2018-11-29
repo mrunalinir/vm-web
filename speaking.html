@@ -1,0 +1,498 @@
+<html>
+<div w3-include-html='default.html'></div>
+<script src='default.js'> </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Catamaran|Montserrat|Raleway|Open+Sans:700|Roboto" rel="stylesheet">
+<style>
+body
+{
+	background-color: black;
+	color: white;
+	z-index: 10;
+	background-image: url('media/speaking.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+hr
+{
+	border: 1px solid;
+	text-align: center;
+	width: 75%;
+	border-color: #fff;
+	padding: none;
+}
+
+.heading
+{
+	font-size: 45px;
+	padding-top: 100px;
+	margin-left: 12%;
+`	overflow: auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.som_txt
+{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 12%;
+	margin-right: 12%;
+	color:  #FFF;
+	font-size: 28px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.flex-events
+{
+	width: 80%;
+	padding-top: 20px;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: transparent;
+	position: absolute;
+}
+
+.bod
+{
+	width: 200px;
+	margin: 20px;
+	height: 300px;
+	border-radius: 35px;
+	background-repeat: none;
+	background-size: 200px  150px;
+	background-position: left top;
+}
+
+
+	
+.content
+{
+	margin-top: 150px;
+	background-size: cover;
+	height: 150px;
+	text-align: center;
+	border-radius: 0px 0px 35px 35px;
+	background-color: #121518;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 26px;
+	transition-property: margin-top, height, border-radius;
+	transition-duration: 0.7s;
+	
+}
+
+.pad
+{
+	padding-top: 15%;
+}
+
+.content a
+{
+	font-size: 20px;
+	padding-top: 50px;
+	text-align: left;
+	opacity: 0;
+	transition-property: opacity;
+	transition-delay: 0.4s;
+	transition-duration: 0.3s;
+}
+
+.content:hover
+{
+	margin-top: 0px;
+	height: 300px;
+	border-radius: 35px;
+	cursor: pointer;
+}
+
+.content:hover a
+{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.description
+{
+	width: 90%;
+	margin-top: 70px;
+	margin-left: 5%;
+	color: white;
+	z-index: 100;
+	position: absolute;
+	display: none;
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+	border-radius: 15px;
+}
+
+.cross
+{
+	border: none;
+	background-color: transparent;
+	position: fixed;
+	font-size: 30px;
+	padding: 30px;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.cross:hover
+{
+	cursor: pointer;
+	
+}
+.description>h1
+{
+	margin-left: 10%;
+	color: white;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 42px;
+	padding-top: none;
+	padding-left: 30px;
+	padding-bottom: 35px;
+}
+
+.description>h2
+{
+	margin-left: 10%;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	padding-top: 75px;
+	padding: 20px;
+}
+.description>p
+{
+	margin-left: 10%;
+	margin-right: 5%;
+	text-align: left;
+	color: white;
+	font-size: 24px;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.description>ul
+{
+	list-style-position: outside;
+	margin-left: 10%;
+	margin-right: 5%;
+	font-family: 'Roboto', sans-serif;
+	list-style: url('<i class="fas fa-certificate"></i>');
+	font-size: 24px;
+	padding: 20px;
+}
+
+.description>flexdet
+{
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-right: 10%;
+	padding-bottom: 10%;
+	background-color: transparent;
+}
+
+.description>flexdet>div
+{
+	
+	padding: 20px;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+
+}
+.check
+{
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	border: none;
+	padding: none;
+}
+.check:hover
+{
+	cursor: pointer;
+}
+.rest
+{
+	opacity: 1;
+}	
+@media only screen and (max-width: 720px)
+{
+	.headings{font-size: 25px;}
+	.som_txt{font-size: 6vw;}
+	.bod{width:175px; height: 250px; border-radius: 30px; background-size: 175px 125px;}
+	.content{margin-top: 125px; height: 125px; border-radius: 0px 0px 30px 30px; font-size: 8vw;}
+	.content a{padding-top: 0px; font-size: 7vw;}
+	.content:hover{height: 250px;}
+	.description{padding-top: 50px; margin-left: none; margin-right: none;}
+	.description>h1{font-size: 8vw;}
+	.description>h2{font-size: 7vw;}
+	.description>p{font-size: 6vw;}
+	.description>ul{font-size: 6vw;}
+	.description>flexdet>div{font-size: 6vw;}
+}	
+#SP, #id1{background-image: url('media/slam.jpeg');}
+#DB, #id2{background-image: url('media/debate.jpeg');}
+#DA, #id3{background-image: url('media/da.jpg');}
+#JAM, #id4{background-image: url('media/jam.jpg');}
+#GD, #id5{background-image: url('media/gd.jpg');}
+
+
+</style>
+
+<script>
+function dis1()
+{
+	desc= document.getElementById('id1');
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c1").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});
+}
+function dis2()
+{
+	desc = document.getElementById('id2')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c2").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis3()
+{
+	desc=document.getElementById('id3')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c3").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis4()
+{
+	desc = document.getElementById('id4')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c4").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+function dis5()
+{
+	desc = document.getElementById('id5')
+	desc.style.display='block';
+	var body = document.querySelector('.rest');
+	body.style.opacity='0.4';
+	document.getElementById("c5").addEventListener("click", function(){
+    desc.style.display='none';
+    body.style.opacity='1';
+});}
+
+</script>
+
+</head>
+
+<body>
+<div class='description' id='id1'  >
+	<div class='cross' id='c1'><i class="fas fa-times"></i></div>
+	<h1>SLAM POETRY</h1>
+	<h2>Event Overview</h2>
+	<p>The poem must be of the poet's own construction and must be in the English language. Poems can be on any subject and in any style.
+
+Each poet gets a maximum of four minutes (plus a ten-second grace period) to read one poem. If the poet goes over time, points will be deducted from the total score.
+</p>
+	<h2>Judging Criteria:</h2>
+	<ul>
+		<li>Storytelling </li>
+		<li>Creativity</li>
+		<li>Impact</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 3.5 Hours </div>
+		<div> Organiser <br> Satyaki Mandal </div>
+		<div> Contact <br> +919082548133</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id2'>
+	<div class='cross' id='c2'><i class="fas fa-times"></i></div>
+	<h1>DEBATE</h1>
+	<h2>Event Overview</h2>
+	<p>“It is better to debate a question without settling it than to settle a question without debating it." This January, ready your argumentative skills and convincing powers as Verba Maximus brings to you the ultimate debate competition: an exhilarating event full of fierce arguments and popular topics . Present your cases skillfully and engage in fiery rebuttals to sway the public opinion in your favour and experience the adrenaline rush as you take on this electrifying debate.
+
+</p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>The debate will be conducted in a 1 on 1-format, its rules being as follows:
+ </li>
+	</ul>
+	
+	<h2>Prelims:</h2>
+	<ul>
+		<li>2 minutes for a speech followed by 1 minute for rebuttal.</li>
+	</ul>
+	
+	<h2>Qualifiers:</h2>
+	<ul>
+		<li>3 minutes for a speech followed by 1 minute for rebuttal. </li>
+		<li>A further 15 seconds will be given to frame a question for your opponent.</li>
+		<li> 1 minute will be given to your opponent to answer the question and vice-versa.</li>
+	</ul>
+	
+	<h2>Semi-Finals and Finals:</h2>
+	<ul>
+		<li>3 minutes for a speech followed by 2 minutes for rebuttal. </li>
+		<li>2 more minutes will be given to each contestant to question his or her opponent and the opponent has to respond.</li>
+		<li> The opponent can choose to cross-question as well.</li>
+	</ul>
+		
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 5 Hours </div>
+		<div> Organiser <br> Rohit Dwivedula </div>
+		<div> Contact <br> +917989669885</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id3'>
+	<div class='cross' id='c3'><i class="fas fa-times"></i></div>
+	<h1>DEVIL'S ADVOCATE</h1>
+	<h2>Event Overview</h2>
+	<p>There are always some topics or issues that seem pretty one-sided and arguing for the other side is always a challenge in itself. This February, looking to bring this challenge to students, Verba Maximus brings to you The Devil’s Advocate – an event which will test your oratory skills and your ability to convince people in a cause they do not believe in. Speak for a stipulated time in favour of an unpopular cause or topic and use your arguments to sway opinions in this intriguing battle of wits.</p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>Topic will be given on the spot</li>
+		<li>15 minutes of preparation time.</li>
+		<li>Length of speaking time is 4 minutes.</li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 2 Hours </div>
+		<div> Organiser <br> Mohammed Burk </div>
+		<div> Contact <br> +919757095043</div>
+	</flexdet>
+</div>
+
+
+<div class='description' id='id4'>
+	<div class='cross' id='c4'><i class="fas fa-times"></i></div>
+	<h1>JAM</h1>
+	<h2>Event Overview</h2>
+	<p>JAM is an out and out fun event which has your heads rolling over your tongue. The game requires your presence of mind along with spontaneity and panache. As the name says, the goal of the game is simple, Just Speak for a minute without any stuttering or hiccups. Can you? Use your flair for speaking to frazzle your opponents. And yes, Always Remember MOD is GOD. </p>
+	<h2>Rules of Procedure</h2>
+	<ul>
+		<li>The total time period of a game is 1 minute i.e. 60 seconds, inclusive of all the time that all the speakers are allowed to speak. </li>
+		<li>The topic will be given by the moderator.</li>
+		<li>The player is given a chance to speak when claps his hands or slams the desk first when asked by the Moderator.</li>
+		<li> The player also gets to speak by pointing out the opponent’s mistakes correctly. In short you lose your chance to speak if you make a mistake. </li>
+		<li>While speaking, the player has to follow certain set of rules viz... If not, the opponent can challenge and point out the mistake to earn a chance to speak as well as extra points. </li>
+	</ul>
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 2.5 Hours </div>
+		<div> Organiser <br> Sonakshi Gupta </div>
+		<div> Contact <br> +917568159959</div>
+	</flexdet>
+</div>
+
+<div class='description' id='id5'>
+	<div class='cross' id='c5'><i class="fas fa-times"></i></div>
+	<h1>GROUP DISCUSSION</h1>
+	<h2>Event Overview</h2>
+	<p>A group of participants are made to discuss on a topic or subject for a limited time and assessed accordingly. It is a chance for you to be more vocal. It evaluates how an individual can function as part of a team. </p>
+	<h2>Rules of Procedure</h2>
+	<p> Participants can take on various roles during the discussion:
+	<ul>
+		<li>The initiator: One who initiates the discussion? It is crucial to give the right direction to the group discussion. The person who starts the group discussion should be very sure of his understanding of the topic.  </li>
+		
+		<li>Moderator: Who keeps the group in track to reach a conclusion and makes sure there is little to no deviation in the discussion from the topic.</li>
+		
+		<li>Facilitator: The one who keeps the flow of the discussion on and maintains a balance in participation of speakers. Makes sure nobody refrains from speaking and nobody is too aggressive either. Can even cross question arguments.</li>
+
+		<li>Summarizer: Every so often this student provides a brief summary of the discussion for others to amend or approve.</li>
+		
+		<li>Elaborator: This individual seeks a connection between the ongoing discussion and the previous sub discussions or the overall theme.</li>.
+
+	</ul>
+	
+	<h2>Judging Criteria:</h2>
+	<ul>
+		<li>Content</li>
+		<li>Creativity</li>
+		<li>Flow Of Thoughts</li>
+		<li>Body Language</li>
+		<li>Ability to direct the group</li>
+		<li>Speech, pronunciation and fluency</li>
+		<li>Persuasive Skills</li>
+		<li>Team Building and Cooperation Skills</li>
+		<li>Attitude and Confidence</li>
+	</ul>
+	
+	<h2>Event Details</h2>
+	<flexdet>
+		<div> Duration <br> 4 Hours </div>
+		<div> Organiser <br> Tejas Vaid </div>
+		<div> Contact <br> +919663273399</div>
+	</flexdet>
+</div>
+
+
+<div class='rest'>
+
+<div class='heading'>SPEAKING EVENTS</div>
+<div class='som_txt'>Check out all the speaking events we have lined up for you!</div>
+
+<hr>
+
+<div class='flex-events'>
+	<div class='bod' id='SP'>
+		<div class='content' ><div class='pad'>Slam Poetry</div><br><br>
+		<a> Express your inner self through our words. <br> <button class='check' onclick='dis1()'>Learn More</button> </a> </div>
+	</div>
+	
+	<div class='bod' id='DB'>
+		<div class='content' ><div class='pad'>Debate</div><br><br>
+		<a> Stand your ground and convince the crowd.<br> <button class='check' onclick='dis2()'>Learn More</button>  </a> </div>
+	</div>
+	<div class='bod' id='DA'>
+		<div class='content' ><div class='pad'>Devil's Advocate</div><br><br>
+		<a> The dark side can be fun too.<br> <button class='check' onclick='dis3()'>Learn More</button>  </a> </div>
+	</div>
+	<div class='bod' id='JAM'>
+		<div class='content' ><div class='pad'>JAM</div><br><br>
+		<a> Keep talking uninterrupted for as long as you can.<br> <button class='check' onclick='dis4()'>Learn More</button>  </a> </div>
+	</div>
+			
+	<div class='bod' id='GD'>
+		<div class='content' ><div class='pad'>Group Discussion</div><br><br>
+		<a> Convince and question.<br> <button class='check' onclick='dis5()'>Learn More</button>  </a> </div>
+	</div>
+	
+	
+	
+</div>
+
+</div>
+</body>
+
+</html>

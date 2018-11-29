@@ -1,0 +1,388 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+
+
+<style>
+.blank{
+	background-color: black;
+	width: 100%;
+	height: 60px;
+}
+.navbar {
+
+	margin-left: -8px;
+	top: 0px;
+	width: 100%;
+	height: 66px;
+	background-color: #E6E9EB;
+	font-family: 'Comfortaa', cursive;
+	color: #000000;
+	opacity: 0.9;	
+	z-index: 500;
+	position: fixed;
+}
+
+.navbar a {
+    
+    top: 0px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 22px 24px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+	background-color: black;
+	color: white;
+}
+
+.circle
+{
+	width: 90px;
+	height: 90px;
+	border-radius: 45px;
+	background-color: black;
+	margin-top: -10px;
+}
+
+.logo
+{
+	float: none;
+	margin-top: 4px;
+	margin-left: 0;
+	padding: none;
+	height: 90%;
+	justify-content: center;
+}
+
+.dropdown {
+    float: right;
+    
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    color: black;
+    outline: none;
+    padding: 22px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropbtn:hover
+{
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+}
+.left
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: none;
+	position: fixed;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	width: 45%;
+}
+
+
+	
+.dropdown-content {
+    display: none;
+    position: fixed;
+    margin-top: -10px;
+    background-color:  #e6e9eb;
+    width: 200px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover{
+	cursor: pointer;
+ }
+
+.dropdown:hover .dropdown-content {
+	cursor: pointer;
+	display: block;
+}
+
+
+.registration
+{
+	width:160px;
+	position: fixed;
+	right: 0;
+	display: none;
+	height:160px;
+	margin-top: 66px;
+	background-color: gray;
+	opacity: 0.7;
+	color: white;
+	border-radius: 80px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Confortaa', cursive;
+	z-index: 400;
+	overflow: hidden;
+}
+
+.registration a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.registration a:hover{
+	color: black;
+	cursor: pointer;
+} 
+.center
+{
+	margin-left: 45%;
+	float: none;
+	width: 10%;
+	justify-content: center;
+	position: fixed;
+}
+
+.right
+{
+	margin-left: 55%;
+	position: fixed;
+	float: none;
+	display: flex;
+	justify-content: center;
+}
+
+.collapse-nav
+{
+	display: none;
+}
+
+
+
+@media only screen and (max-width:720px)
+{
+	
+	.navbar
+	{
+		display: none;
+	}
+	
+	.collapse-nav
+	{
+		display: block;
+		position: fixed;
+		margin-top: -8px;
+		margin-left: -8px;
+		width: 100%;
+		height: 45px;
+		background-color: #E6E9EB;
+    		font-family: 'Comfortaa', cursive;
+    		color: #000000;
+    		opacity: 0.8;
+    		z-index: 500;
+	}
+
+	.collapse-nav a
+	{
+		float: left;
+		position: fixed;
+		padding: 14px 10px;
+		color: black;
+		font-size: 3vw
+		text-align: center;
+		text-decoration: none;
+	}
+
+	.logo
+	{
+		float: right;
+		width: 50px;
+
+		margin-top: -10px;
+
+
+	}
+	
+	.right
+	{
+		position: fixed;
+		right: 10px;
+	}
+	
+	.drop
+	{
+		float: left;
+		overflow: hidden;
+		position: fixed;
+
+	}
+
+	.drop .dropbtn
+	{
+		font-size: 30px;    
+		border: none;
+		color: black;
+        	outline: none;
+		padding: 10px 10px;
+		background-color: inherit;
+		font-family: inherit;
+		margin-top: -6px;
+		text-align: center;
+	}
+
+	.collapse-nav a:hover, .drop:hover .dropbtn {
+		cursor: pointer;
+	
+	}
+
+	.drop-content {
+    	display: hidden;
+    	position: fixed;
+	background-color:  #9ca8b0;
+	text-align: center;
+    	width: 100%;
+    	
+	}
+
+	.drop-content a {
+		font-size: 5vw;
+		float: none;
+		position: relative;
+		color: black;
+		text-decoration: none;
+		display: none;
+		text-align: left;
+	}
+	
+	.drop-content a: {
+		cursor: pointer;
+	
+	}
+
+	.drop:hover .drop-content{
+		display: block
+	}
+	
+	
+	.drop:hover .drop-content a{
+		display: block;
+	}
+
+	.blank{
+		height: 50px;}
+	.registration
+	{
+		width:100px;
+		position: fixed;
+		margin-top: 50px;
+		margin-left: 70%;
+		height: 100px;
+		border-radius: 50px;
+		font-size: 10px;
+		opacity: 0.7;
+	}	
+	
+}
+
+
+</style>
+
+
+</html>
+
+<script>
+function work()
+{
+	document.getElementById("work").style.display = 'block';
+	document.getElementById("w1").style.display = 'block';
+	document.getElementById("w2").style.display = 'block';
+	document.getElementById("w3").style.display = 'block';
+	document.getElementById("w4").style.display = 'block';
+	document.getElementById("w5").style.display = 'block';
+	document.getElementById("w6").style.display = 'block';
+	document.getElementById("w7").style.display = 'block';
+	document.getElementById("w8").style.display = 'block';
+		
+}
+
+</script>
+
+</head>
+
+<div class="navbar">
+	<div class='right'>
+		<a href="schedule.html">SCHEDULE</a>
+	  	<a href="contact.html">CONTACT</a>
+		<a href="team.html">TEAM</a>
+  	</div>
+  	
+  	<div class='center'>
+		<div class='circle'>  	
+		  <img onclick="location.href='landing_page.html';" class="logo" src="media/logo.png"></img>
+		  </div>
+  	</div>
+
+  	
+  	<div class='left'>
+		<a href="home.html">HOME</a>
+	  	<a href="about.html">ABOUT</a>
+	  	<div class="dropdown">
+  			<button class="dropbtn">EVENTS<i style='padding-left:5px;' class="fas fa-angle-down"></i></button>
+  		
+  			<div class="dropdown-content">
+  	    			<a href="speaking.html">SPEAKING</a>
+    				<a href="writing.html">WRITING</a>
+    				<a href="other.html">OTHERS</a>
+    			</div>
+    	
+    		</div>
+ 	 	
+ 	</div>
+</div>
+<div class="collapse-nav">
+	<div class='right'>
+		<a href="landing_page.html"><img class='logo' src='media/logo1.png'></img></a>
+	</div>
+	
+	<div class='drop' id="trig">
+		<input type = 'button' onclick="work()" id='sex' class='dropbtn' ><i class="fas fa-bars"></i></input>
+		<div id="work" class="drop-content" >
+			<a id='w1' href="home.html">HOME</a>
+			<a id='w2' href="about.html">ABOUT</a>
+			<a id='w3' href='speaking.html'>SPEAKING EVENTS</a>
+			<a id='w4' href='writing.html'>WRITING EVENTS</a>
+			<a id='w5' href='other.html'>OTHER EVENTS</a>
+			<a id='w6' href="team.html">TEAM</a>
+			<a id='w7' href="contact.html">CONTACT</a>
+			<a id='w8' href="schedule.html">SCHEDULE</a>
+		</div>
+	</div>
+</div>
+<div class='registration' background-image="url('media/logo.png')">
+	<br><br><a href='#'>REGISTRATION:</a>
+	<a href='#'>Stand-Up Show</a>
+	<a href='#'>Event</a>
+	<a href='#'>Contingent</a>
+</div>
+
+
+
+

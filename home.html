@@ -1,0 +1,474 @@
+<html>
+<head>
+
+<div w3-include-html='default.html'></div>
+<script src='default.js'> </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Nunito|Great+Vibes" rel="stylesheet">
+
+
+</head>
+
+<style>
+
+body{
+	
+	background-color: #000000;
+	color: white;
+
+} 
+
+
+.registration{
+	-webkit-animation-name: border;
+	-webkit-animation-duration: 2s;
+		
+}
+@-webkit-keyframes border
+{
+	from{width: 0px; height: 0px; margin-top: 146px; right: 80px border-radius: 0px;}
+	to{width: 160px; height: 160px; margin-top: 66px; right: 0px; border-radius: 80px;}
+}
+
+@keyframes border
+{
+	from{width: 0px; height: 0px; margin-top: 146px; right: 80px; border-radius: 0px;}
+	to{width: 160px; height: 160px; margin-top: 66px; right: 0px; border-radius: 80px;}
+}
+
+.registration a{
+		-webkit-animation-name: text;
+		-webkit-animation-duration: 2s;
+		animation-delay: 1s;
+		animation-direction: forwards;
+		animation-fill-mode: inherit;
+}
+
+@-webkit-keyframes text{
+	0%{display: none;}
+	100%{display: block; color: white;}
+}
+
+@keyframes text{
+	0%{display: none;}
+	100%{display: block; color: white;}
+}
+.about-image{
+
+	background-image: url('media/revolution.jpg');
+	background-color: #11a2bc;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
+	
+}
+
+.about-text{
+	
+	width: 100%;
+	margin-top: 0;
+	position: relative;
+}
+.about-head{
+	padding-top: 10%;
+	margin-left: 10%;
+	text-align: left;
+	font-size: 50px;
+	position: relative;
+	opacity: 1;
+	font-family: 'Cinzel Decorative', cursive;
+	
+}
+
+.about-content{
+	
+	padding-top:5%;
+	padding-bottom: 10%;
+	margin-left: 10%;
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	opacity: 1;
+	-webkit-animation-name: about-content;
+	-webkit-animation-duration: 1s;
+}
+@keyframes about-content
+{
+	from{margin-left: 0%; padding-right: 10%;}
+	to{margin-left: 10%; padding-right: 0%;}
+}
+
+.publicity
+{
+	background-color: black;
+	color: white;
+	display: none;
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	
+}
+
+.headings
+{
+	padding-top: 5%;
+	padding-bottom: none;
+	font-size: 45px;
+	margin-left:10%;
+	font-family: 'Great Vibes', cursive;
+}
+
+.imgz
+{
+	padding: 3%;
+	padding-bottom: none;
+	float: left;
+	width: 28%;
+	position: absolute;
+
+}
+
+.standup-details
+{
+	padding: 3%;
+	padding-top: none;
+	margin-left: 40%;
+	margin-right: 5%;
+	font-size: 25px;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+}
+	
+.author-details
+{
+	padding: 3%;
+	padding-top: none;
+	margin-right: 35%;
+	margin-left: 5%;
+	font-size: 25px;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+}
+
+.scam-holder
+{
+	padding-top: 7%;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 7%;
+}
+	
+.scam-holder a
+{
+	background-image: url('media/rainbow.jpg');
+	background-position: center;
+	background-repeat: none;
+	background-size: 400px 60px;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	opacity: 0.8;
+	padding: 10px;
+	border: block;
+	border-width: 10px;
+	border-color: white;
+	text-decoration: none;
+}
+
+.scam-holder a:hover
+{
+	background-image: none;
+	background-color: transparent;
+	cursor: pointer;
+	border: solid 3px white;
+	opacity: 1;
+}
+.heading
+{
+	color: white;
+	font-size: 45px;
+	margin-left: 8%;
+	padding: 3%;
+}
+
+.main
+{
+	width: 98%;
+	height: 50%;
+	position: absolute;
+}
+.slide
+{
+	display: none;
+}
+.sherlocked
+{
+	background-image: url('media/sherlocked.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+}
+.debate
+{
+	background-image: url('media/debate.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+}
+.sots
+{
+	background-image: url('media/sots.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+}
+.slam
+{
+	background-image: url('media/slam.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+}
+
+.slide-heading
+{
+
+	color: white;
+	padding-top: 4%;
+	font-family: 'Great Vibes', cursive;	
+	font-size: 45px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 0;
+	position: relative;
+}
+.slide-content
+{
+	color: white;
+	font-size: 24px;
+	padding-top: 8%;
+	padding-left: 5%;
+	font-family: 'Nunito', sans-serif;
+	padding-right: 5%;
+	padding-bottom: 15%;
+	position: relative;
+}
+
+.control-1
+{
+	color: white;
+	font-size: 25px;
+	background-color: transparent;
+	border: none;
+	padding: 2%;
+	position: absolute;
+	float: left;
+	top: 100%;
+	z-index: 5;
+}
+
+.control-1:hover
+{
+	background-color: gray;
+	color: black;
+	cursor: pointer;
+}
+
+.control-2
+{
+	color: white;
+	font-size: 25px;
+	padding: 2%;
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	right: 0;
+	top: 100%;
+	z-index: 5;
+}
+
+.control-2:hover
+{
+	background-color: gray;
+	color: black;
+	cursor: pointer;
+}
+
+.standup
+{
+	margin-left:10%;
+}
+.author
+{
+ 	margin-left: 60%;	
+}
+	
+
+@media only screen and (max-width:720px)
+{
+	.slide-heading, .headings, .about-head {font-size: 6vw;}
+	.about-content{font-size: 4vw;}
+	.control-1, .control-2{font-size: 3vw; padding: 5%;}
+	.standup-details, .author-details{font-size: 4vw; margin-left: 0; margin-right: 0; float: none; position: relative; padding: 5%;}
+	.slide-content{font-size: 4vw;}
+	.imgz
+	{
+		float: none;
+		position: relative;
+		width: 70%;
+		left: 15%: 
+
+	}
+	.standup, .author{float: none; 	margin-left: 20%; width: 60%;}
+	.scam-holder a{ font-size: 4vw; padding: 2%;}
+	
+	@-webkit-keyframes border
+	{
+		from{width: 0px; height: 0px; margin-top: 100px; right: 50px border-radius: 0px;}
+		to{width: 100px; height: 100px; margin-top: 50px; right: 0px; border-radius: 50px;}
+	}
+
+	@keyframes border
+	{
+		from{width: 0px; height: 0px; margin-top: 100px; right: 50px; border-radius: 0px;}
+		to{width: 100px; height: 100px; margin-top: 50px; right: 0px; border-radius: 50px;}
+	}
+
+
+}
+
+</style>
+
+<body>
+<div class='blank'></div>
+	<div class='about-image'><div class='about-text'>
+		<div class='about-head'>About Verba Maximus</div>
+		<div class='about-content'>That is part of the beauty of all literature. You discover that your longings are universal longings, that you're not lonely and isolated from anyone. You belong. 
+Verba Maximus, BITS Pilani Hyderabad Campus' annual national literary fest aims at bringing together all literature enthusiasts together in one place. With a series of exciting events and competitions, it is a platform for people to express their love for the language. 
+Verba Maximus 2019 will be the ninth edition of the fest and promises 2 jam-packed days of thrilling events and entertainment. So mark your calendars, for the 19th and 20th of January and join us in celebrating the power of literature</div>
+		
+	</div></div>
+	
+	
+<div class='publicity'>
+	
+	<div class='headings'>Stand-Up Show</div>
+	<p> <div class='standup'><img  class='imgz' src='media/abish.jpg'></img></div>
+	<div class='standup-details'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></p>
+	
+	<div class='headings'>Author Talk</div>
+	<p> <div class='author'><img src='media/devdutt.jpg' class='imgz'></img></div>
+	<div class='author-details'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></p>
+	
+<br>
+	
+	<div class='scam-holder'>
+		<a href='#'>Stand-Up</a>
+		<a href='#'>Event</a>
+		<a href='#'>Contingent</a>
+		
+	</div>
+</div>
+
+
+<div class='main'>
+	<button class='control-1' onclick=next(-1)><i class="fas fa-angle-left"></i></button>
+	<button class='control-2' onclick=next(1)><i class="fas fa-angle-right"></i></button>
+		
+	<div class='slide'><div class='sherlocked'>
+		<div class='about-head'>Headliner Events</div>
+
+		<div class='slide-heading'>Sherlocked</div>
+		<div class='slide-content'>Unravel what really happened at the crime scene, as you enact the role of a journalist at a press conference. Breaking news updates will help you as go along, although conflicting news reports might get in your way. And when the clock runs out, it's your job to write down an unbiased report,after interviewing the suspects, by connecting the dots in order to help deliver justice.</div>
+	</div></div>
+
+	
+	<div class='debate'><div class='slide'>
+<div class='about-head'>Headliner Events</div>
+
+		<div class='slide-heading'>Debate</div>
+		<div class='slide-content'>'It's better to debate a question without settling it, than settle a question without debating it'.Argue to your heart's content in a formal setting. Speak for or against a topic and watch your words convince the audience and the judges of your stand.</div>
+	</div></div>
+	
+	<div class='sots'><div class='slide'>
+<div class='about-head'>Headliner Events</div>
+
+		<div class='slide-heading'>Symphonies of the Soul</div>
+		<div class='slide-content'>If you are a staunch believer of the fact that music and literature are intertwined forms of art, this event is for you. Listen to music we play and write anything which comes to your mind, poem, a story, anything.</div>
+	</div></div>
+	
+	<div class='slam'><div class='slide'>
+<div class='about-head'>Headliner Events</div>
+
+		<div class='slide-heading'>Slam Poetry</div>
+		<div class='slide-content'>Have you ever wanted a group of literary entusiasts to listen your poems? Here we give you a stage to express your feelings, recite your poems and mesmerize the audience.</div>
+	</div></div>
+	
+	
+</div>
+
+<br><br>
+
+</body>
+
+<script>
+var index = 1;
+slide(index);
+
+function next(n) 
+{
+	slide(index+= n);
+}
+
+
+function slide(n) 
+{
+	var i;
+	var s = document.getElementsByClassName("slide");
+	if (n > s.length) 
+	{	index = 1;
+	} 
+	   
+	if (n < 1)
+	{
+		index = s.length;
+	}
+	
+	for (i = 0; i < s.length; i++) 
+	{
+		s[i].style.display = "none";  
+	}
+	s[index-1].style.display = "block"; 
+	
+	
+	var o = 0;
+	var pin;
+	pin = setInterval(fade,10);
+	function fade()
+	{
+		s[index-1].style.opacity = o;
+		o = o + 0.01;
+		if(o > 1)
+		{
+			s[index-1].style.opacity = 1;
+			clearInterval(pin);
+		}
+	}
+
+
+
+}
+</script>
+
+
+
+</html>
