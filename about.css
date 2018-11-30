@@ -3,7 +3,7 @@ body, html {
     margin:0;
     padding:0;
 }
-.collapse-nav a:hover{text-decoration: none; color: black;}
+ 
 section.section:last-child {
   margin-bottom: 0;
 }
@@ -223,7 +223,7 @@ position: absolute;
 
   #h2section1 {
     text-align: center;
-    top: 20%;
+    top: 15%;
     left: 15%;
     color: white;
     color: #faf0e6;
@@ -231,18 +231,18 @@ position: absolute;
   }
 
   #section1txt1 {
-    top: 35%;
+    top: 25%;
     left: 15%;
     width: 60%;
     color: #faf0e6;
-    font-size: 2.6vh;
+    font-size: 2.7vw;
     font-family: 'Montserrat', sans-serif;
   }
 
   #h2section2 {
 
     text-align: left;
-    top: 127%;
+    top: 117%;
     font-size: 6vh;
     left: 15%;
     color: white;
@@ -251,10 +251,10 @@ position: absolute;
   }
 
   #section2txt1 {
-    top: 144%;
+    top: 134%;
     left: 15%;
     width: 60%;
-    font-size: 2.4vh;
+    font-size: 2vh;
     position: absolute;
     color: #faf0e6;
     font-family: 'Montserrat', sans-serif;
@@ -274,7 +274,7 @@ position: absolute;
     width: 40%;
     height: 20%;
     left: 25%;
-    top: 110%;
+    top: 100%;
   }
 
 
@@ -317,14 +317,14 @@ margin-top: -70px;
 
   #themevid{
     position: absolute;
-    top: 200%;
+    top: 180%;
     left: 0%;
 
   }
 
   #follow {
     position: absolute;
-    top: 300%;
+    top: 280%;
     left: 42%;
     color: black;
     font-size: 4vh;
@@ -332,25 +332,25 @@ margin-top: -70px;
 
   #facebook {
     position:absolute;
-    top: 310%;
+    top: 295%;
     left:25%;
   }
 
   #twitter {
     position:absolute;
-    top: 310%;
+    top: 295%;
     left:40%;
   }
 
   #youtube {
     position:absolute;
-    top:310%;
+    top:295%;
     left:55%;
   }
 
   #insta {
     position:absolute;
-    top: 310%;
+    top: 295%;
     left:70%;
   }
 }
@@ -360,7 +360,7 @@ margin-top: -70px;
 .registration{display:none;}
   #h2section1 {
     text-align: center;
-    top: 20%;
+    top: 10%;
     left: 15%;
     color: white;
     color: #faf0e6;
@@ -368,19 +368,19 @@ margin-top: -70px;
   }
 
   #section1txt1 {
-    top: 35%;
+    top: 25%;
     left: 15%;
     width: 60%;
     color: #faf0e6;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     font-family: 'Montserrat', sans-serif;
   }
 
   #h2section2 {
 
     text-align: left;
-    top: 127%;
-    font-size: 5vh;
+    top: 100%;
+    font-size: 4.5vh;
     left: 15%;
     color: white;
     position: absolute;
@@ -388,10 +388,10 @@ margin-top: -70px;
   }
 
   #section2txt1 {
-    top: 140%;
+    top: 115%;
     left: 15%;
     width: 60%;
-    font-size: 2.4vh;
+    font-size: 2.38vh;
     position: absolute;
     color: #faf0e6;
     font-family: 'Montserrat', sans-serif;
@@ -411,19 +411,19 @@ margin-top: -70px;
     width: 40%;
     height: 17%;
     left: 25%;
-    top: 110%;
+    top: 86%;
   }
 
   #themevid{
     position: absolute;
-    top: 200%;
+    top: 180%;
     left: 0%;
 
   }
 
   #follow {
     position: absolute;
-    top: 300%;
+    top: 280%;
     left: 38%;
     color: black;
     font-size: 3.5vh;
@@ -431,34 +431,34 @@ margin-top: -70px;
 
   #facebook {
     position:absolute;
-    top: 310%;
+    top: 290%;
     left:25%;
   }
 
   #twitter {
     position:absolute;
-    top: 310%;
+    top: 290%;
     left:40%;
   }
 
   #youtube {
     position:absolute;
-    top:310%;
+    top:290%;
     left:55%;
   }
 
   #insta {
     position:absolute;
-    top: 310%;
+    top: 290%;
     left:70%;
   }
 }
 
-@media only screen and (max-width: 230px){
+@media only screen and (max-width: 260px){
 
   #h2section1 {
     text-align: center;
-    top: 20%;
+    top: 10%;
     left: 15%;
     color: white;
     color: #faf0e6;
@@ -466,7 +466,7 @@ margin-top: -70px;
   }
 
   #section1txt1 {
-    top: 35%;
+    top: 20%;
     left: 15%;
     width: 60%;
     color: #faf0e6;
@@ -477,7 +477,7 @@ margin-top: -70px;
   #h2section2 {
 
     text-align: left;
-    top: 127%;
+    top: 105%;
     font-size: 3.5vh;
     left: 15%;
     color: white;
@@ -486,7 +486,7 @@ margin-top: -70px;
   }
 
   #section2txt1 {
-    top: 144%;
+    top: 120%;
     left: 15%;
     width: 60%;
     font-size: 2vh;
@@ -509,19 +509,19 @@ margin-top: -70px;
     width: 40%;
     height: 17%;
     left: 25%;
-    top: 110%;
+    top: 90%;
   }
 
   #themevid{
     position: absolute;
-    top: 200%;
+    top: 180%;
     left: 0%;
 
   }
 
   #follow {
     position: absolute;
-    top: 300%;
+    top: 280%;
     left: 38%;
     color: black;
     font-size: 3.5vh;
@@ -529,25 +529,25 @@ margin-top: -70px;
 
   #facebook {
     position:absolute;
-    top: 310%;
+    top: 290%;
     left:5%;
   }
 
   #twitter {
     position:absolute;
-    top: 310%;
+    top: 290%;
     left:25%;
   }
 
   #youtube {
     position:absolute;
-    top:310%;
+    top:290%;
     left:47%;
   }
 
   #insta {
     position:absolute;
-    top: 310%;
+    top: 290%;
     left:70%;
   }
 }
