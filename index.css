@@ -3,7 +3,7 @@ body
 	margin: 0;
 	padding: 0;
 	background: black;
-	cursor: pointer;
+
 }
 
 .navbar, .dropdown-content
@@ -34,7 +34,7 @@ body
 	animation-fill-mode: both;
 }
 
-.circle{display: none;}
+
 
 .parta
 {
