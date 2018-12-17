@@ -96,10 +96,7 @@ body
 	width: 180px;
 	color: white;
 	font-weight: 300;	
-
-    font-family: 'Muli', sans-serif;
-
-
+	font-family: 'Muli', sans-serif;
 	text-align: left;
 	height: 36px;
 	vertical-align: 0px;
@@ -429,9 +426,9 @@ body
 
 @media only screen and (max-width: 720px)
 {
-	.hashtag{font-size: 5vw; display: inline-block;}
+	.hashtag{font-size: 5vw; position: absolute;}
 	.changetxt{font-size: 5vw; display: inline-block;}
-	.collapse-nav{animation: colnav 1s ease-out 11s; animation-fill-mode: both;}
+	.collapse-nav{animation: colnav 1s ease-out 10s; animation-fill-mode: both;}
 	.dates{font-size: 4vw;}
 	.finhash{font-size: 4vw; top: 90%;}
 	.wotg
