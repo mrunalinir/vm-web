@@ -1,0 +1,121 @@
+<html>
+<head>
+	<link rel='stylesheet' type='text/css' href='index.css' />
+	<link href="https://fonts.googleapis.com/css?family=Armata|El+Messiri|Muli|Poppins|Staatliches|Istok+Web|Cinzel+Decorative|Open+Sans:300|Text+Me+One" rel="stylesheet">
+	<div w3-include-html='default.html'></div>
+	<script src='default.js'> </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<script> 
+  
+var deadline = new Date("Jan 19, 2019 00:00:00").getTime(); 
+  
+var x = setInterval(function() { 
+  
+var now = new Date().getTime(); 
+var t = deadline - now; 
+var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+if(seconds<10){seconds='0'+seconds;}
+if(minutes<10){minutes='0'+minutes;}
+if(hours<10){hours='0'+hours;}
+if(days<10){days='0'+days;}
+document.getElementById("day").innerHTML =days ; 
+document.getElementById("hour").innerHTML =hours; 
+document.getElementById("minute").innerHTML = minutes;  
+document.getElementById("second").innerHTML =seconds;  
+if (t < 0) { 
+        clearInterval(x); 
+        document.getElementById("day").innerHTML ='0'; 
+        document.getElementById("hour").innerHTML ='0'; 
+        document.getElementById("minute").innerHTML ='0' ;  
+        document.getElementById("second").innerHTML = '0'; } 
+}, 1000); 
+</script> 
+</head>
+
+
+
+<body onclick="location.href='home.html';">
+
+<div class='parta'><div class='back'>
+<div class='hashtag'>
+Change Begins With
+	<div class='changetxt'>
+		<div class='first'><b>Desire</b></div>
+		<div class='second'><b>Vision</b></div>
+		<div class='third'><b>a Voice</b></div>
+		<div class='fourth'><b>Ink</b></div>
+	</div>
+</div>
+
+<div class='dates'>January 19th & 20th </div>
+<img class='logo' src='media/logo.png'></img>
+<div class='finhash'>#ChangeBeginsWith<span class='fontz'>Ink</span></div>	
+
+</div></div>
+
+
+
+
+<div class='partb'>
+<div class='wotg'>BRACE YOURSELVES</div>
+<div class="clockdiv"> 
+	<div>
+		<span class="days" id="day"></span> 
+		 <div class="smalltext">Days</div>
+	</div>
+  
+	<div> 
+		<span class="hours" id="hour"></span> 
+		<div class="smalltext">Hours</div> 
+	</div> 
+	<div>	 
+		<span class="minutes" id="minute"></span> 
+		<div class="smalltext">Minutes</div> 
+	</div> 
+	<div> 
+		<span class="seconds" id="second"></span> 
+		<div class="smalltext">Seconds</div> 
+	</div> 
+</div> 
+  
+<div class='followbox'>
+	<div class="flexcontainer">
+		<a href="https://www.facebook.com/verbamaximus/"><i class="fab fa-facebook-f"></i> </a>
+		<a href="https://twitter.com/verbamaximus"><i class="fab fa-twitter-square"></i></a>
+		<a href="https://www.youtube.com/channel/UC3eomI73rnwHqKK5j7aR-qw"><i class="fab fa-youtube"></i></a>
+		<a href="https://www.instagram.com/vm.bphc/"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.facebook.com/verbamaximus/photos/a.316419335138106.73027.148345488612159/1199759160137448/?type=3"><i class="fab fa-snapchat-ghost"></i></a>
+		<a href="https://plus.google.com/+VerbaMaximus"><i class="fab fa-google-plus-g"></i></a>
+	</div>	
+	<div class="footer"><i class="far fa-copyright"></i> Verba Maximus, 2018</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

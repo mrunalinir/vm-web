@@ -1,0 +1,543 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: black;
+	cursor: pointer;
+}
+
+.navbar, .dropdown-content
+{
+	background-color: transparent;
+	opacity: 0;
+	margin-left: 10px;
+	animation: nav 1s ease-out 11s;
+	animation-fill-mode: both;
+}
+.navbar a, .dropbtn, .dropdown-content a
+{
+	background-color: transparent;
+	animation: nava 1s ease-out 11s;
+	animation-fill-mode: both;
+}
+.followbox
+{
+	background: transparent;
+	position: absolute;
+	bottom: 0;
+	animation: nav 1s ease-out 11.5s;
+	animation-fill-mode: both;
+}
+.flexcontainer>a>i
+{
+	animation: nava 1s ease-out 11.5s;
+	animation-fill-mode: both;
+}
+
+.circle{display: none;}
+
+.parta
+{
+	display: block;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	animation: flip1 10s linear;
+	animation-fill-mode: both;	 
+}
+.back
+{
+	width: 100%;
+	height: 100%;
+	animation: bg 7s ease-out;
+	animation-fill-mode: both;
+}
+.partb
+{
+	padding: 0;
+	margin-top: 0;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	background-image:url('media/test2.jpg');
+	background-size: cover;
+	background-position: left top;
+	animation: flip2 10s linear;
+	animation-fill-mode: both;
+}
+
+.hashtag
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+	overflow: hidden;
+	opacity: 1;
+	display: inline-block;
+	animation: downscale 1s linear 6s;
+	animation-fill-mode: forwards;
+}
+.hashtag::before
+{
+	content: '#';
+	opacity: 0;
+	animation: show 0.7s ease-out 5s;
+	color: white;
+	animation-fill-mode: forwards;
+}
+.changetxt
+{
+	display: inline-block;
+	width: 180px;
+	color: white;
+	font-weight: 300;	
+
+    font-family: 'Muli', sans-serif;
+
+
+	text-align: left;
+	height: 36px;
+	vertical-align: 0px;
+	font-size: inherit;
+}
+
+.changetxt>div
+{
+	font-size: inherit;
+	opacity: 0;
+	margin-left: -30px;
+	height: 36px;
+	overflow: hidden;
+	position: absolute;
+	font-weight: 300;
+	animation-fill-mode: forwards;
+
+
+}
+
+.changetxt>div:nth-child(1)
+{
+	animation: roll 5.5s linear 0s;
+}
+
+.changetxt>div:nth-child(2)
+{
+	animation: roll 5.5s linear 1.25s;
+}
+
+.changetxt>div:nth-child(3)
+{
+	animation: roll 5.5s linear 2.5s;
+}
+ 
+.changetxt>div:nth-child(4)
+{
+	animation: roll2 5.5s linear 3.75s;
+	color: red;
+	animation-fill-mode: forwards;
+	
+} 
+.finhash
+{
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	color: white;
+	opacity: 0.8;
+	animation: smol 0.5s linear 6s;
+	animation-fill-mode: both;
+}
+
+.fontz{color: red; font-size: inherit; display: opacity: inherit;}
+.logo
+{
+	position: absolute;
+	opacity: 0;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	animation: view 1s ease-out 6s;
+	animation-fill-mode: both;
+}
+
+.dates
+{
+	font-size: 38px;
+	position: absolute;
+	color: #c4c4c4;
+	display: block;
+	top: 45%;
+	opacity: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: rush 1s ease-out 6s;
+	animation-fill-mode: both;
+}
+
+.vm{ 
+ 	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 10%;
+} 
+
+.wotg{ 
+ 	color: white;
+	font-family: 'Text Me One', sans-serif;
+	letter-spacing: 20px;
+	font-size: 32px;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+ 
+} 
+
+.clockdiv{ 
+	font-family: sans-serif; 
+	color: #fff;
+	position: absolute;
+	display: flex;
+	flex-direction: row; 
+	top: 50%;
+	left: 50%;
+	background: rgba(26,26,26,0.9);
+	box-shadow: 10px 10px 10px (0,0,0,0.2);
+	transform: translate(-50%, -50%);
+	text-align: center; 
+	font-size: 40px; 
+} 
+.clockdiv > div{ 
+	padding: 20px;
+	padding-top: 0px; 
+	display: inline-block; 
+} 
+
+.clockdiv>div > span{ 
+	padding: 30px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	font-size: 75px;
+	font-weight: 300;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+
+
+} 
+.clockdiv>div>.smalltext{ 
+	
+	font-size: 20px;
+	color: gray;
+	font-family: 'Muli', sans-serif;
+} 
+@keyframes flip1
+{
+	0%{opacity: 1;}
+	95%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+@keyframes flip2
+{
+	0%{opacity: 0;}
+	95%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes rush
+{
+	0%
+	{
+		opacity: 0;
+		top: 45%;
+		font-size: 38px;
+	}
+	
+	100%
+	{
+		font-size: 25px;
+		top: 90%;
+		opacity: 1;
+	}
+} 
+		
+@keyframes view
+{
+	0%{width: 80%; height: 0%; opacity: 0; top: 20%;}
+	100%{width: 40%; opacity: 1; top: 45%;}
+}
+
+@keyframes smol
+{
+	0%{opacity: 0;}
+	100%{opacity: 0.6;}
+}
+
+@keyframes roll
+{
+	0%
+	{
+		font-size: 0px;
+		opacity: 0;
+		margin-left: -30px;
+		margin-top: 0px;
+		transform: rotate(-25deg)
+	}
+	
+	3%
+	{
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	
+	5%
+	{
+		opacity: 1;
+		margin-left: 0px;
+		margin-top: 0px;
+		font-size: inherit;
+		
+	}
+	
+	20%
+	{
+		opacity: 1;
+		font-size: inherit;
+		margin-left: 0px;
+		margin-top: 0px;
+		transform: rotate(0deg); 
+		
+	}
+	
+	27%
+	{
+		font-size: 0px;
+		opacity: 0.5;
+		margin-left: 20px;
+		margin-top: 100px;
+	}
+	
+	100%
+	{
+		font-size: 0px;
+		opacity: 0;
+		margin-left: -30px;
+		margin-top: 0px;
+		transform: rotate(15deg);
+	}
+}
+ 
+@keyframes roll2
+{
+	0%
+	{
+		font-size: 0px;
+		opacity: 0;
+		margin-left: -30px;
+		margin-top: 0px;
+		transform: rotate(-25deg)
+	}
+	
+	3%
+	{
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+	
+	5%
+	{
+		opacity: 1;
+		margin-left: 0px;
+		margin-top: 0px;
+		font-size: inherit;
+		
+	}
+	
+	100%
+	{
+		opacity: 1;
+		font-size: inherit;
+		margin-left: 0px;
+		margin-top: 0px;
+		transform: rotate(0deg); 
+		
+	}
+	
+}
+@keyframes downscale
+{
+	0%
+	{
+		font-size:36px;
+		top: 50%;
+		opacity: 1;
+	}
+	
+	100%
+	{
+		font-size: 0;
+		top: 95%;
+		opacity: 0;
+	}
+	
+}
+
+@keyframes show
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+	
+@keyframes bg
+{
+	0%{background-image: url('media/background.png'); background-size: cover; background-position: left top;}
+	100%{background-image: url('media/background.png'); background-size: cover;
+	background-position: center; 
+	background-attachment: fixed;}
+}
+@keyframes nava
+{
+	0%
+	{
+		opacity: 0;
+		color: white;
+		background-color: transparent;
+		border-color: white;
+	}
+	100%
+	{
+		opacity: 1;
+		color: white;
+		background-color: transparent;
+		border-color: white;
+	}
+}
+@keyframes nav
+{
+	0%{opacity: 0; background-color: transparent;}
+	100%{opacity: 1; background-color: transparent;}
+}
+
+
+@media only screen and (max-width: 720px)
+{
+	.hashtag{font-size: 5vw; display: inline-block;}
+	.changetxt{font-size: 5vw; display: inline-block;}
+	.collapse-nav{animation: colnav 1s ease-out 11s; animation-fill-mode: both;}
+	.dates{font-size: 4vw;}
+	.finhash{font-size: 4vw; top: 90%;}
+	.wotg
+	{
+		font-size: 5vw;
+		letter-spacing: 1px;
+		display: inline-block;
+	}
+	.clockdiv
+	{
+		padding: 0;
+		font-size: 5vw;
+	}
+	.clockdiv>div
+	{
+		padding: 3vw;
+		font-size: 5vw;
+	}
+	.clockdiv>div>span
+	{
+		padding: 3vw;
+		font-size: 5vw;
+	}
+	.clockdiv>div>.smalltext
+	{
+		font-size: 3vw;
+	}
+	@keyframes downscale
+	{
+		0%
+		{
+			font-size:5vw;
+			top: 50%;
+			opacity: 1;
+		}
+		
+		100%
+		{
+			font-size: 0;
+			top: 90%;
+			opacity: 0;
+		}
+	
+	}
+	@keyframes colnav
+	{
+		0%{opacity: 0;}
+		100%{opacity: 1;}
+	}
+	@keyframes rush
+	{
+		0%
+		{
+			opacity: 0;
+			top: 45%;
+			font-size: 5vw;
+		}
+	
+		100%
+		{
+			font-size: 4vw;
+			top: 80%;
+			opacity: 1;
+		}
+	} 
+	@keyframes view
+	{
+		0%{width: 80%; height: 0%; opacity: 0; top: 20%;}
+		100%{width: 48%; opacity: 1; top: 45%;}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

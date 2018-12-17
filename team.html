@@ -4,7 +4,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Rajdhani|Raleway|Montserrat" rel="stylesheet">
 <style>
-body{background-color: #262626;}
+body{background-color: #262626; margin: 0; padding: 0;}
+.navbar{margin-left: 0;}
 
 .team
 {
@@ -59,7 +60,7 @@ body{background-color: #262626;}
 {
 	width: calc(50% + 25px);
 	box-sizing: border-box;
-	background-color: #222;
+	background-color: #000;
 	border-right: 50px solid #000;
 	border-bottom: 200px solid transparent;
 	background-position: 0px 0px;
@@ -129,6 +130,66 @@ hr
 	color: white;
 	font-family: 'Rajdhani', sans-serif;}
 
+.followbox
+{
+	background-color:#020509;
+	width: 100%;
+	margin: none;
+	height: 160px;
+	display: flex;
+	align-items:  center;
+	justify-content: center;
+	padding-bottom: 20px;
+	flex-direction: column;
+}
+.flexcontainer
+{
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: none;
+	color: white;
+}
+
+.flexcontainer>a
+{
+	margin: 20px;
+	position: relative;
+	text-decoration: none;
+	top: 10px;
+}
+	
+.flexcontainer>a>i
+{
+	padding: 10px;
+	font-size: 30px;
+	border-radius: 28px;
+	color:  #ff0038;
+	border: solid 1px;
+	border-color: #ff0038;
+	-webkit-transition: color 1s, background-color 1s;
+	transition: color 1s , background-color 1s;
+	transition-timing-function: ease-in-out;
+}
+.flexcontainer>a>i:hover
+{
+	color: #020509;
+	background-color: #ff0038;
+}
+.footer{
+	font-family: 'Questrial';
+  padding-top: 20px;
+	align-items: center;
+  color: gray;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 580px){
+	.flexcontainer>a{margin:1vh;}
+	.flexcontainer>a>i{font-size: 2.5vh; padding: 1.3vh; border-radius: 2.2vh;}
+	.footer{font-size: 2.5vh;}
+}
 @media only screen and (max-width: 520px){
 .team{font-size: 7vw;}
 .som_txt{font-size: 5vw;}
@@ -148,6 +209,17 @@ hr{padding: 0;}
 .contact{font-size:2vw; padding: 2px; margin: 0;}
 }
 
+@media only screen and (max-width: 340px){
+.flexcontainer>a{margin:1.4vh;}
+	.flexcontainer>a>i{font-size: 3vh; padding: 1.3vh; border-radius: 2.2vh;}
+  .footer{font-size: 3vh;}
+}
+
+@media only screen and (max-width: 260px){	
+	.flexcontainer>a{margin:1.2vh;}
+	.flexcontainer>a>i{font-size: 2.5vh; padding: 1vh; border-radius: 2vh;}
+	.footer{font-size: 2.5vh;}
+}
 
 #AR{background-image: url('media/AR.jpg')}	
 #MK{background-image: url('media/MARK.jpg')}
@@ -367,6 +439,18 @@ hr{padding: 0;}
 	</div>
 
 
+</div>
+
+<div class='followbox'>
+	<div class="flexcontainer">
+		<a class="facebook" href="https://www.facebook.com/verbamaximus/"><i class="fab fa-facebook-f"></i> </a>
+		<a href="https://twitter.com/verbamaximus"><i class="fab fa-twitter-square"></i></a>
+		<a href="https://www.youtube.com/channel/UC3eomI73rnwHqKK5j7aR-qw"><i class="fab fa-youtube"></i></a>
+		<a href="https://www.instagram.com/vm.bphc/"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.facebook.com/verbamaximus/photos/a.316419335138106.73027.148345488612159/1199759160137448/?type=3"><i class="fab fa-snapchat-ghost"></i></a>
+		<a href="https://plus.google.com/+VerbaMaximus"><i class="fab fa-google-plus-g"></i></a>
+	</div>	
+	<div class="footer"><i class="far fa-copyright"></i> Verba Maximus, 2018</div>
 </div>
 
 </body>
