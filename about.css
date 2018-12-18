@@ -2,10 +2,12 @@ body, html {
     height: 100%;
     margin: 0;
     padding:0;
+	background: black;
 }
 
 section.section:last-child {
   margin-bottom: 0;
+
 }
 section.section h2 {
   margin-bottom: 40px;
@@ -299,7 +301,7 @@ position: absolute;
   section.section.parallax-1 {
     height: 100%;
     width: 100%;
-		margin-top: -70px;
+    margin-top: -70px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -352,7 +354,7 @@ position: absolute;
   }
 
   #section1txt1 {
-    top: 25%;
+    top: 20%;
     left: 15%;
     width: 60%;
     color: #faf0e6;
@@ -400,10 +402,11 @@ position: absolute;
 
   #themevid{
     position: absolute;
-    top: 180%;
+    top: 190%;
     left: 0%;
 
   }
+  .followbox{margin-top: 0;}
 	.flexcontainer>a{margin:1.4vh;}
 	.flexcontainer>a>i{font-size: 3vh; padding: 1.3vh; border-radius: 2.2vh;}
   .footer{font-size: 3vh;}

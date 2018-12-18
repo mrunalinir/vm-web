@@ -73,6 +73,7 @@ body
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
+
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
 	font-weight: 300;
@@ -190,13 +191,13 @@ body
 .wotg{ 
  	color: white;
 	font-family: 'Text Me One', sans-serif;
-	letter-spacing: 20px;
+	letter-spacing: 15px;
+	white-space: nowrap;
 	font-size: 32px;
 	position: absolute;
 	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
- 
 } 
 
 .clockdiv{ 
@@ -426,15 +427,15 @@ body
 
 @media only screen and (max-width: 720px)
 {
-	.hashtag{font-size: 5vw; position: absolute;}
-	.changetxt{font-size: 5vw; display: inline-block;}
+	.hashtag{font-size: 5vw; display: inline-block;}
+	.changetxt{font-size: 5vw;}
 	.collapse-nav{animation: colnav 1s ease-out 10s; animation-fill-mode: both;}
 	.dates{font-size: 4vw;}
 	.finhash{font-size: 4vw; top: 90%;}
 	.wotg
 	{
 		font-size: 5vw;
-		letter-spacing: 1px;
+		letter-spacing: 1vw;
 		display: inline-block;
 	}
 	.clockdiv
