@@ -166,8 +166,6 @@
 	color: white;
 	display: block;
 	
-	padding: 5px;
-	
 }
 
 .registration a:hover{
@@ -337,7 +335,9 @@
 	background-color:  #9ca8b0;
 	text-align: center;
     	width: 100%;
-    	
+	height: 0%;
+	transition: height 0.3s ease-in;
+	   	
 	}
 
 	.drop-content a {
@@ -350,20 +350,18 @@
 		text-decoration: none;
 		display: none;
 		text-align: left;
-	}
-	
-	.drop-content a: {
-		cursor: pointer;
 	
 	}
-
+	
 	.drop:hover .drop-content{
-		display: block
+		display: block;
+		height: 100%;
 	}
 	
 	
 	.drop:hover .drop-content a{
 		display: block;
+		
 	}
 
 	.blank{
