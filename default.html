@@ -291,17 +291,12 @@
 
 	.logonav
 	{
-		position: absolute;
+		position: fixed;
+		float: right;
 		right: 0;
 		width: 50px;
 		height: 40px;
 		margin-top: -20px;
-	}
-	
-	.right
-	{
-		position: fixed;
-
 	}
 	
 	.drop
@@ -427,10 +422,8 @@
  	</div>
 </div>
 <div class="collapse-nav">
-	<div class='right'>
 		<a href="index.html"><img class='logonav' src='media/logo1.png'></img></a>
-	</div>
-	
+		
 	<div class='drop' id="trig">
 		<input type = 'button' onclick="work()" id='sex' class='dropbtn' ><i class="fas fa-bars"></i></input>
 		<div id="work" class="drop-content" >
