@@ -28,4 +28,7 @@ function includeHTML() {
 }
 includeHTML();
 
-
+function response()
+{
+	alert("Your query has been registered.");
+}
