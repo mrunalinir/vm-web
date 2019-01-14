@@ -30,5 +30,10 @@ includeHTML();
 
 function response()
 {
-	alert("Your query has been registered.");
+	swal({
+  title: "Your query has been submitted.",
+  text: "We will email you back in up to 24 hours.",
+  icon: "success",
+  button: "Okay",
+});
 }
