@@ -73,13 +73,13 @@ body
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
-
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
 	font-weight: 300;
 	overflow: hidden;
 	opacity: 1;
 	display: inline-block;
+    justify-content: center;
 	animation: downscale 1s linear 6s;
 	animation-fill-mode: forwards;
 }
@@ -93,8 +93,8 @@ body
 }
 .changetxt
 {
-	display: inline-block;
-	width: 180px;
+    display: inline-block;
+    width: 180px;
 	color: white;
 	font-weight: 300;	
 	font-family: 'Muli', sans-serif;
@@ -108,14 +108,14 @@ body
 {
 	font-size: inherit;
 	opacity: 0;
+    display: inline-block;
 	margin-left: -30px;
 	height: 36px;
 	overflow: hidden;
 	position: absolute;
 	font-weight: 300;
 	animation-fill-mode: forwards;
-
-
+    
 }
 
 .changetxt>div:nth-child(1)
@@ -140,6 +140,7 @@ body
 	animation-fill-mode: forwards;
 	
 } 
+b{display: inline-block;}
 .finhash
 {
 	position: absolute;
